@@ -1,0 +1,418 @@
+html, body{
+    background: #fff;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0px !important;
+    padding: 0px !important;
+    overflow-x: hidden !important;
+}
+
+*{
+    text-decoration: none !important;
+}
+
+.nav{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px 0px 25px;
+    height: 80px;
+    box-shadow: 0px 19px 38px rgba(0,0,0,.10);
+    background: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.nav .links a{
+    margin-right: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #000;
+}
+
+.nav .links a:hover{
+    color: crimson;
+}
+
+.nav .logo h4{
+    font-size: 18px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.landing{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10vw 0px 10vw;
+    height: 900px;    
+}
+
+.landingtext h1{
+    font-size: 48px;
+    font-weight: 600px;
+    margin: 0px !important;
+}
+
+.landingtext h3{
+    font-size: 18px;
+    line-height: 30px;
+    opacity: .3;
+}
+
+.btn{
+    width: 120px;
+    padding: 15px 20px;
+    margin-top: 50px;
+    background-color: crimson;
+    
+    border-radius: 45px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+.btn a{
+    color: #fff;
+}
+
+.landingimg img{
+    width: 300px;
+}
+
+#spantext{
+    font-size: 36px;
+    color: crimson;
+}
+
+.about{
+    height: 600px;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.abouttext{
+    position: relative;
+    padding: 0px 50px;
+    height: inherit;
+}
+
+.abouttext h1{
+    position: relative;
+    left: 110px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.abouttext img{
+    width: 93px;
+    position: absolute;
+    top: 50px;
+}
+
+.aboutlist{
+    width: 55%;
+}
+
+ul{
+    list-style-type: none;
+    color:coral;
+}
+
+ul li{
+    font-size: 34x;
+    position: relative;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ebebeb;
+    
+}
+
+li p{
+    font-size: 16px;
+    line-height: 30px;
+    opacity: .6;
+    padding-left: 60px;
+    color: #000;
+}
+
+li span{
+    position: absolute;
+    line-height: 25px;
+    font-weight: 600; 
+    font-size: 30px;
+    color: crimson;
+    opacity: .7;
+}
+
+#aboutspan{
+    font-size: 30px;
+    color: crimson;
+    font-weight: 700;
+}
+
+.infoSection{
+    height: 600px;
+}
+
+.infoHeader{
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.infoHeader h1{
+    font-weight: 400;
+}
+
+.infoCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0 40px 0;
+}
+
+.infoCards .card{
+    position: relative;
+    height: 360px;
+    width: 350px;
+    background: #fff;
+    box-shadow: 0px 10px 22px rgba(0,0,0,.10);
+    
+}
+
+.infoCards .one .cardoneImg{
+    width: 180px;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+}
+
+.cardbgone{
+    height: 150px;
+    background: #ffce63;
+}
+
+.cardContent{
+    padding: 0 20px;
+}
+
+.cardContent h2{
+    font-weight: 600;
+}
+
+.cardContent p{
+    line-height: 30px;
+    opacity: .6;
+    
+}
+
+#cqspan{
+   color: crimson; 
+    font-weight: 600;
+}
+
+.banner{
+    height: 400px;
+    background: #ffce63;
+    display: flex;
+   
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bannerText h1{
+    font-size: 28px;
+    color: #000;
+    font-weight: 600;
+}
+
+.bannerText img{
+    width: 93px;
+    margin-right: 20px;
+   
+}
+
+.bannerImg img{
+    width: 20vw;
+}
+
+#stay{
+    font-size: 16px;
+}
+
+.footer{
+    height: 100px;
+    display: flex;
+   
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.footerlinks a{
+    margin: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+/*Responsive*/
+
+@media only screen and (max-width:600px){
+    .nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px;
+        height: auto;
+        overflow-y: hidden;
+        
+    }
+    
+    .nav h4{
+        font-size: 6vw;
+        margin-top: 10px;
+        margin-bottom: 14px;
+            
+    }
+    
+    .nav .links a{
+        margin-right: 25px;
+        font-weight: 600;
+        font-size: 12px;
+    }
+/*    landing resposive*/
+    
+    .landing{
+        flex-direction: column-reverse;
+        height: 1100px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .landingtext h1{
+        font-size: 6vw;
+        margin: 0 !important;
+            
+    }
+    
+    .landingtext h3{
+        font-size: 16px;
+    }
+    
+    .landingtext .btn{
+        margin: 0 auto;
+    }
+    
+    .landingtext .btn{
+        font-size: 3vw;
+    }
+    
+    .landingimg img{
+        width: 52vw;
+        margin-bottom: 20px;
+        
+    }
+    
+/*    about responsive*/
+    
+    .about{
+        height: auto;
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .abouttext{
+        
+        height: 100px;
+    }
+    
+    .abouttext h1{
+        left: 15px;
+        font-size: 5vw;
+    }
+    
+    .abouttext img{
+        width: 16vw;
+        top: 10px;
+        left: -30px;
+    }
+    
+    .aboutlist{
+        width: 75%;
+    }
+    
+    ul li{
+        font-size: 16px;
+    }
+    
+    li p{
+        font-size: 14px;
+    }
+    
+    .infoSection{
+        height: auto;
+    }
+    
+    .infoHeader{
+        text-align: center;
+        margin: 40px 0;
+    }
+    
+    .infoCards{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 50px;
+        
+    }
+    
+    .infoCards .card{
+        margin-bottom: 80px;
+    }
+    
+    .banner{
+        height: auto;
+        direction: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 50px;
+    }
+    
+    .banner h1{
+        font-size: 6vw;
+    }
+    
+    #stay{
+        font-size: 3vw;
+    }
+    
+    .bannerText img{
+        width: 20vw;
+    }
+    
+    .bannerImg img{
+        width: 26vw;
+    }
+    
+    .footer{
+        padding-bottom: 40px;
+    }
+}
